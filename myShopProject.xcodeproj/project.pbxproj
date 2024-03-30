@@ -13,6 +13,9 @@
 		856A9FCD2BB6A7D60056445C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 856A9FCC2BB6A7D60056445C /* Assets.xcassets */; };
 		856A9FD02BB6A7D60056445C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856A9FCE2BB6A7D60056445C /* LaunchScreen.storyboard */; };
 		856A9FDA2BB6BE240056445C /* UserAuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856A9FD92BB6BE240056445C /* UserAuthorizationView.swift */; };
+		856A9FDC2BB705170056445C /* UserAuthorizationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856A9FDB2BB705170056445C /* UserAuthorizationModel.swift */; };
+		856A9FDF2BB707470056445C /* DataBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856A9FDE2BB707470056445C /* DataBaseViewController.swift */; };
+		856A9FE12BB7075D0056445C /* DataBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856A9FE02BB7075D0056445C /* DataBaseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		856A9FCF2BB6A7D60056445C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		856A9FD12BB6A7D60056445C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		856A9FD92BB6BE240056445C /* UserAuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthorizationView.swift; sourceTree = "<group>"; };
+		856A9FDB2BB705170056445C /* UserAuthorizationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthorizationModel.swift; sourceTree = "<group>"; };
+		856A9FDE2BB707470056445C /* DataBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseViewController.swift; sourceTree = "<group>"; };
+		856A9FE02BB7075D0056445C /* DataBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +64,7 @@
 			children = (
 				856A9FD72BB6A7DE0056445C /* App */,
 				856A9FD82BB6BB7F0056445C /* Modules */,
-				856A9FCC2BB6A7D60056445C /* Assets.xcassets */,
-				856A9FCE2BB6A7D60056445C /* LaunchScreen.storyboard */,
+				856A9FE32BB7077A0056445C /* Recourse */,
 				856A9FD12BB6A7D60056445C /* Info.plist */,
 			);
 			path = myShopProject;
@@ -77,10 +82,38 @@
 		856A9FD82BB6BB7F0056445C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				856A9FC72BB6A7D40056445C /* UserAuthorizationViewController.swift */,
-				856A9FD92BB6BE240056445C /* UserAuthorizationView.swift */,
+				856A9FDD2BB706A10056445C /* RegisterScreens */,
+				856A9FE22BB707620056445C /* DataBaseScreens */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		856A9FDD2BB706A10056445C /* RegisterScreens */ = {
+			isa = PBXGroup;
+			children = (
+				856A9FD92BB6BE240056445C /* UserAuthorizationView.swift */,
+				856A9FC72BB6A7D40056445C /* UserAuthorizationViewController.swift */,
+				856A9FDB2BB705170056445C /* UserAuthorizationModel.swift */,
+			);
+			path = RegisterScreens;
+			sourceTree = "<group>";
+		};
+		856A9FE22BB707620056445C /* DataBaseScreens */ = {
+			isa = PBXGroup;
+			children = (
+				856A9FDE2BB707470056445C /* DataBaseViewController.swift */,
+				856A9FE02BB7075D0056445C /* DataBaseView.swift */,
+			);
+			path = DataBaseScreens;
+			sourceTree = "<group>";
+		};
+		856A9FE32BB7077A0056445C /* Recourse */ = {
+			isa = PBXGroup;
+			children = (
+				856A9FCE2BB6A7D60056445C /* LaunchScreen.storyboard */,
+				856A9FCC2BB6A7D60056445C /* Assets.xcassets */,
+			);
+			path = Recourse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,8 +187,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				856A9FC82BB6A7D40056445C /* UserAuthorizationViewController.swift in Sources */,
+				856A9FDC2BB705170056445C /* UserAuthorizationModel.swift in Sources */,
 				856A9FDA2BB6BE240056445C /* UserAuthorizationView.swift in Sources */,
+				856A9FDF2BB707470056445C /* DataBaseViewController.swift in Sources */,
 				856A9FC42BB6A7D40056445C /* AppDelegate.swift in Sources */,
+				856A9FE12BB7075D0056445C /* DataBaseView.swift in Sources */,
 				856A9FC62BB6A7D40056445C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
